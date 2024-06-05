@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@font-face {
+	font-family: 'MyCustomFont';
+	src: url('../fonts/Orbitron.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: rgb(15, 45, 69);
+	color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #fff;
+}
+a {
+	color: #dbc500;
+	text-decoration: none;
+}
+a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.navbar {
+	background-color: #0f2d45;
+	padding: 1rem;
+}
+.yellow {
+	color: #dbc500;
+	text-decoration: none;
+}
+.navbar .navbar-brand {
+	color: #000;
+	font-family: 'MyCustomFont';
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+	color: #fff;
+}
+.navbar-nav .nav-link {
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 0.5rem 1rem;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+	color: #dbc500;
+}
+.section-padding {
+	padding: 60px 0;
+}
+.section-header {
+	margin-bottom: 40px;
+	text-align: center;
+}
+.titleContent {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+.textContent {
+	font-size: 1.25rem;
+	line-height: 1.6;
+}
+.card {
+	background-color: rgb(41, 48, 53);
+	border: 1px solid #dbc500;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 30px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.card h3 {
+	font-size: 1.75rem;
+	margin-bottom: 1rem;
+	color: #dbc500;
+}
+.card p {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	color: #fff;
+}
+.card ul {
+	list-style: none;
+	padding: 0;
+}
+.card ul li {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+	padding-left: 1.5rem;
+	position: relative;
+	color: #fff;
+}
+.card ul li::before {
+	content: '\f058';
+	font-family: 'FontAwesome';
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #dbc500;
+}
+.btnContainer {
+	text-align: center;
+	margin-top: 20px;
+}
+.btn {
+	background-color: #dbc500;
+	color: #0f2d45;
+	padding: 10px 20px;
+	font-size: 1.25rem;
+	font-weight: 600;
+	border-radius: 5px;
+	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover, .btn:focus {
+	background-color: #fff;
+	color: #0f2d45;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+footer {
+	background-color: #0f2d45;
+	padding: 20px 0;
+	text-align: center;
+}
+footer p {
+	margin: 0;
+	font-size: 1rem;
+	color: #fff;
+}
+.contact {
+	background-color: #0f2d45;
+	color: #fff;
+	padding: 60px 0;
+	text-align: center;
+}
+.contact .content {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 40px;
+	border-radius: 10px;
+}
+.contact .social-links {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0;
+}
+.contact .social-links li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.contact .social-links li a {
+	color: #dbc500;
+	font-size: 1.5rem;
+}
+.contact .social-links li a:hover {
+	color: #fff;
+}
+.social {
+	width: 20px;
+	height: 20px;
+  }
+
+@media (max-width: 1200px) {
+	.titleContent {
+		font-size: 2rem;
+	}
+	.textContent {
+		font-size: 1.1rem;
+	}
+	.card {
+		padding: 15px;
+	}
+	.card h3 {
+		font-size: 1.5rem;
+	}
+	.card p, .card ul li {
+		font-size: 0.9rem;
+	}
+	.btn {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.navbar .navbar-brand {
+		font-size: 20px;
+	}
+	.navbar-nav .nav-link {
+		font-size: 14px;
+	}
+	.titleContent {
+		font-size: 1.75rem;
+	}
+	.textContent {
+		font-size: 1rem;
+	}
+	.card h3 {
+		font-size: 1.3rem;
+	}
+	.card p, .card ul li {
+		font-size: 0.8rem;
+	}
+	.btn {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar .navbar-brand {
+		font-size: 18px;
+	}
+	.navbar-nav .nav-link {
+		font-size: 13px;
+	}
+	.titleContent {
+		font-size: 1.5rem;
+	}
+	.textContent {
+		font-size: 0.9rem;
+	}
+	.card {
+		padding: 10px;
+	}
+	.card h3 {
+		font-size: 1.2rem;
+	}
+	.card p, .card ul li {
+		font-size: 0.75rem;
+	}
+	.btn {
+		font-size: 0.9rem;
+		padding: 8px 16px;
+	}
+}
+
+@media (max-width: 576px) {
+	.navbar .navbar-brand {
+		font-size: 16px;
+	}
+	.navbar-nav .nav-link {
+		font-size: 12px;
+	}
+	.titleContent {
+		font-size: 1.25rem;
+	}
+	.textContent {
+		font-size: 0.8rem;
+	}
+	.card {
+		padding: 8px;
+	}
+	.card h3 {
+		font-size: 1rem;
+	}
+	.card p, .card ul li {
+		font-size: 0.7rem;
+	}
+	.btn {
+		font-size: 0.8rem;
+		padding: 6px 12px;
+	}
+}
